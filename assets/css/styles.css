@@ -1,0 +1,158 @@
+/* ===== 기본 설정 ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+/* ===== 헤더 ===== */
+.site-header {
+  background: #111827;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav a {
+  margin-left: 20px;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.site-nav a:hover {
+  color: #ffffff;
+}
+
+/* ===== 히어로 ===== */
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+.hero-title {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+/* ===== 버튼 ===== */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.btn.primary {
+  background-color: #38bdf8;
+  color: #000;
+}
+
+.btn.primary:hover {
+  background-color: #0ea5e9;
+}
+
+.btn.ghost {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.btn.ghost:hover {
+  background-color: #38bdf8;
+  color: #000;
+}
+
+/* ===== 섹션 ===== */
+.section {
+  padding: 70px 0;
+}
+
+.section.alt {
+  background-color: #111827;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-head h2 {
+  margin-bottom: 10px;
+}
+
+/* ===== 카드 ===== */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.cards-2 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.cards-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  color: #cbd5e1;
+}
+
+/* ===== 푸터 ===== */
+.site-footer {
+  padding: 30px 0;
+  background-color: #111827;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  margin-right: 15px;
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
