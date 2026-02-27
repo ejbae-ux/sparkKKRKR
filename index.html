@@ -2,231 +2,174 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SPARK | 대한스포츠약학회</title>
-  <meta name="description" content="대한스포츠약학회(SPARK) 공식 홈페이지" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PHCCC - 공지사항</title>
+  <link rel="stylesheet" href="assets/css/styles.css?v=1" />
 </head>
 <body>
-  <a class="skip-link" href="#main">본문 바로가기</a>
 
-  <header class="site-header" role="banner">
+  <!-- 1) Top utility bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <!-- 국기 아이콘 자리 (원하면 이미지로 교체) -->
+        <span class="flag" aria-label="언어">🇰🇷</span>
+      </div>
+
+      <div class="topbar-right">
+        <div class="search">
+          <input type="text" placeholder="Search" aria-label="Search" />
+          <button type="button" aria-label="Search button">🔍</button>
+        </div>
+        <a class="top-link" href="#">로그인</a>
+        <a class="top-link" href="#">회원가입</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2) Header: logo + titles -->
+  <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="SPARK 홈으로">
-        <img src="assets/images/logo.jpg" alt="SPARK 로고">
-        <span class="brand-text">
-          <strong>SPARK</strong>
-          <small>대한스포츠약학회</small>
-        </span>
+      <a class="brand" href="#">
+        <img class="brand-logo" src="assets/images/logo.png" alt="학회 로고" />
+        <div class="brand-text">
+          <div class="brand-ko">한국약사커뮤니케이션과 커뮤니티케어학회</div>
+          <div class="brand-en">Korean Academy of Pharmacy Health Communication and Community Care</div>
+        </div>
       </a>
-
-      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="site-nav" aria-label="주요 메뉴">
-        <a class="nav-link active" href="index.html">홈</a>
-        <a class="nav-link" href="about.html">학회소개</a>
-        <a class="nav-link" href="#programs">교육</a>
-        <a class="nav-link" href="#news">공지</a>
-        <a class="nav-link" href="#contact">문의</a>
-        <a class="nav-cta" href="#join">회원가입</a>
-      </nav>
     </div>
   </header>
 
-  <main id="main">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-bg" style="background-image:url('assets/img/hero.jpg');"></div>
-      <div class="container hero-inner">
-        <p class="kicker">Korean Society of Sports Pharmacy</p>
-        <h1 class="hero-title">공정한 스포츠, 안전한 약물 사용</h1>
-        <p class="hero-subtitle">
-          대한스포츠약학회(SPARK)는 스포츠 현장에서 약물 안전·도핑 예방·교육과 연구를 통해
-          선수 건강 보호와 공정한 스포츠 환경 조성에 기여합니다.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#programs">프로그램 보기</a>
-          <a class="btn ghost" href="about.html">학회 소개</a>
-        </div>
+  <!-- 3) Hero banner -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <img class="hero-img" src="assets/images/hero.jpg" alt="메인 배너" />
+    </div>
+  </section>
 
-        <div class="hero-stats" role="list" aria-label="핵심 지표">
-          <div class="stat" role="listitem"><strong>교육</strong><span>SPARK-ED</span></div>
-          <div class="stat" role="listitem"><strong>연구</strong><span>스포츠약학 RWD</span></div>
-          <div class="stat" role="listitem"><strong>네트워크</strong><span>약사·학생·전문가</span></div>
-        </div>
+  <!-- 4) Main navigation -->
+  <nav class="gnb">
+    <div class="container">
+      <ul class="gnb-list">
+        <li><a href="#">MAIN</a></li>
+        <li><a href="#">학회소개</a></li>
+        <li><a href="#">학술대회</a></li>
+        <li><a href="#">소규모연구회</a></li>
+        <li><a class="active" href="#">교육워크숍</a></li>
+        <li><a href="#">학술지</a></li>
+        <li><a href="#">학회소식</a></li>
+        <li><a href="#">회원가입</a></li>
+      </ul>
+    </div>
+    <div class="gnb-divider"></div>
+  </nav>
+
+  <!-- 5) Content: notice table -->
+  <main class="content">
+    <div class="container content-inner">
+
+      <div class="section-title">공지사항</div>
+
+      <div class="table-wrap">
+        <table class="board">
+          <thead>
+            <tr>
+              <th class="col-no">No</th>
+              <th>제목</th>
+              <th class="col-writer">글쓴이</th>
+              <th class="col-date">작성시간</th>
+              <th class="col-views">조회수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="pinned">
+              <td class="col-no">📌</td>
+              <td><a href="#">회원 회비 등록 요청</a></td>
+              <td class="col-writer">사무국</td>
+              <td class="col-date">2023-03-08</td>
+              <td class="col-views">1065</td>
+            </tr>
+
+            <tr>
+              <td class="col-no">40</td>
+              <td><a href="#">2025년 교육워크숍 개설 안내</a></td>
+              <td class="col-writer">사무국</td>
+              <td class="col-date">2025-10-23</td>
+              <td class="col-views">184</td>
+            </tr>
+            <tr>
+              <td class="col-no">39</td>
+              <td><a href="#">2025년 제8회 정기학술대회 참석 공문</a></td>
+              <td class="col-writer">사무국</td>
+              <td class="col-date">2025-09-01</td>
+              <td class="col-views">197</td>
+            </tr>
+            <tr>
+              <td class="col-no">38</td>
+              <td><a href="#">2025년 제8회 정기학술대회 공지</a></td>
+              <td class="col-writer">사무국</td>
+              <td class="col-date">2025-05-30</td>
+              <td class="col-views">467</td>
+            </tr>
+            <tr>
+              <td class="col-no">37</td>
+              <td><a href="#">2024년 대한약학회 추계학술대회 공동심포지엄 개최 보고</a></td>
+              <td class="col-writer">사무국</td>
+              <td class="col-date">2025-04-28</td>
+              <td class="col-views">370</td>
+            </tr>
+            <tr>
+              <td class="col-no">36</td>
+              <td><a href="#">2024년 대한약학회 추계학술대회 공동심포지엄 개최 안내</a></td>
+              <td class="col-writer">사무국</td>
+              <td class="col-date">2024-09-28</td>
+              <td class="col-views">721</td>
+            </tr>
+            <tr>
+              <td class="col-no">35</td>
+              <td><a href="#">3기 회장단 임기 종료에 따른 감사 인사</a></td>
+              <td class="col-writer">사무국</td>
+              <td class="col-date">2024-01-03</td>
+              <td class="col-views">733</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </section>
 
-    <!-- QUICK LINKS -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>바로가기</h2>
-          <p>자주 찾는 메뉴를 한 번에 이동하세요.</p>
-        </div>
-
-        <div class="grid cards-3">
-          <a class="card" href="#programs">
-            <h3>SPARK-ED</h3>
-            <p>온라인 교육 프로그램 및 수강 안내</p>
-            <span class="card-link">자세히 →</span>
-          </a>
-          <a class="card" href="#news">
-            <h3>공지사항</h3>
-            <p>학회 공지, 일정, 자료 업데이트</p>
-            <span class="card-link">자세히 →</span>
-          </a>
-          <a class="card" href="#join">
-            <h3>회원가입/회비</h3>
-            <p>가입 절차 및 연회비 안내</p>
-            <span class="card-link">자세히 →</span>
-          </a>
-        </div>
+      <!-- 6) Pagination -->
+      <div class="pagination">
+        <a class="pg" href="#">&lt;</a>
+        <a class="pg active" href="#">1</a>
+        <a class="pg" href="#">2</a>
+        <a class="pg" href="#">3</a>
+        <a class="pg" href="#">4</a>
+        <a class="pg" href="#">&gt;</a>
       </div>
-    </section>
 
-    <!-- PROGRAMS -->
-    <section id="programs" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>교육 프로그램</h2>
-          <p>현장 적용 중심의 콘텐츠로 도핑 예방과 약물 안전 역량을 강화합니다.</p>
-        </div>
-
-        <div class="grid cards-2">
-          <article class="card">
-            <div class="pill">대표 프로그램</div>
-            <h3>SPARK-ED (온라인)</h3>
-            <p>스포츠약학 기초부터 사례 기반 실무까지 단계별 학습을 제공합니다.</p>
-            <ul class="list">
-              <li>도핑 금지약물·보충제 리스크</li>
-              <li>약물복용 상담/의사소통</li>
-              <li>스포츠 현장 케이스 스터디</li>
-            </ul>
-            <div class="card-actions">
-              <a class="btn small primary" href="#contact">수강 문의</a>
-              <a class="btn small ghost" href="#news">공지 확인</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="pill">세미나/웨비나</div>
-            <h3>정기 학술 활동</h3>
-            <p>최신 이슈를 공유하고 전문가 네트워크를 확장합니다.</p>
-            <ul class="list">
-              <li>국내외 연자 초청 웨비나</li>
-              <li>가이드라인/정책 동향 공유</li>
-              <li>회원 대상 자료 제공</li>
-            </ul>
-            <div class="card-actions">
-              <a class="btn small primary" href="#news">일정 보기</a>
-              <a class="btn small ghost" href="#join">회원 혜택</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- NEWS -->
-    <section id="news" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>공지사항</h2>
-          <p>최근 업데이트를 확인하세요. (여기는 나중에 게시판/노션/구글시트 연동도 가능)</p>
-        </div>
-
-        <div class="grid cards-3">
-          <article class="card">
-            <div class="meta">2026-02-20</div>
-            <h3>SPARK-ED 안내 및 유의사항</h3>
-            <p>교육자료 공유 제한, Q&A 이용 방법 등</p>
-            <a class="card-link" href="#contact">문의 →</a>
-          </article>
-          <article class="card">
-            <div class="meta">2026-01-31</div>
-            <h3>정기 총회 안내</h3>
-            <p>온라인 진행 및 안건 공지</p>
-            <a class="card-link" href="#contact">문의 →</a>
-          </article>
-          <article class="card">
-            <div class="meta">상시</div>
-            <h3>회원가입/연회비</h3>
-            <p>가입 절차 및 납부 안내</p>
-            <a class="card-link" href="#join">바로가기 →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- JOIN -->
-    <section id="join" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>회원가입</h2>
-          <p>가입 폼/회비 안내를 여기에 연결하면 돼요.</p>
-        </div>
-
-        <div class="callout">
-          <div>
-            <h3>회원 혜택</h3>
-            <ul class="list">
-              <li>교육/세미나 우선 안내</li>
-              <li>자료실 접근(회원 전용)</li>
-              <li>학회 활동 참여 및 네트워킹</li>
-            </ul>
-          </div>
-          <div class="callout-actions">
-            <!-- 구글폼 링크나 회비 안내 페이지로 교체 -->
-            <a class="btn primary" href="#" target="_blank" rel="noreferrer">가입 폼 열기</a>
-            <a class="btn ghost" href="#" target="_blank" rel="noreferrer">회비 안내 보기</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>문의</h2>
-          <p>운영 메일/채널을 연결하세요.</p>
-        </div>
-
-        <div class="grid cards-2">
-          <div class="card">
-            <h3>이메일</h3>
-            <p>sportspharmacy.korea@gmail.com</p>
-            <a class="btn small primary" href="mailto:sportspharmacy.korea@gmail.com">메일 보내기</a>
-          </div>
-          <div class="card">
-            <h3>SNS/링크</h3>
-            <p>인스타그램/링크트리/카카오채널 등</p>
-            <div class="row">
-              <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Instagram</a>
-              <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Link</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   </main>
 
-  <footer class="site-footer">
+  <!-- 7) Quick links -->
+  <section class="quick">
+    <div class="quick-row">
+      <a class="quick-box q1" href="#">학술대회 ➜ 바로가기</a>
+      <a class="quick-box q2" href="#">교육워크숍 ➜ 바로가기</a>
+      <a class="quick-box q3" href="#">학술지 ➜ 바로가기</a>
+    </div>
+  </section>
+
+  <!-- 8) Footer -->
+  <footer class="footer">
     <div class="container footer-inner">
-      <div>
-        <strong>대한스포츠약학회(SPARK)</strong>
-        <p class="muted">© <span id="year"></span> SPARK. All rights reserved.</p>
+      <div class="footer-title">한국약사커뮤니케이션과 커뮤니티케어학회</div>
+      <div class="footer-meta">
+        <span>E-mail: phccc2022@naver.com</span>
+        <span class="sep">|</span>
+        <span>Homepage: www.phccc.or.kr</span>
       </div>
-      <div class="footer-links">
-        <a href="about.html">학회소개</a>
-        <a href="#contact">문의</a>
-        <a href="#join">회원가입</a>
-      </div>
+      <div class="footer-copy">Copyright © 2026 한국약사커뮤니케이션과 커뮤니티케어학회. All rights reserved.</div>
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
