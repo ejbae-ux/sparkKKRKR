@@ -12,9 +12,9 @@ body {
 
 /* ===== 헤더 ===== */
 .site-header {
-  background: #111827;
+  background: #0f172a;
   padding: 15px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(88,114,224,0.3);
 }
 
 .container {
@@ -37,14 +37,14 @@ body {
 }
 
 .site-nav a:hover {
-  color: #ffffff;
+  color: #8FA2F5;
 }
 
 /* ===== 히어로 ===== */
 .hero {
   padding: 100px 0;
   text-align: center;
-  background: linear-gradient(135deg, #1e293b, #0f172a);
+  background: linear-gradient(135deg, #5872E0, #3F56C4);
 }
 
 .hero-title {
@@ -54,7 +54,7 @@ body {
 
 .hero-subtitle {
   font-size: 18px;
-  color: #cbd5e1;
+  color: #e2e8f0;
   max-width: 600px;
   margin: 0 auto 30px auto;
 }
@@ -70,22 +70,22 @@ body {
 }
 
 .btn.primary {
-  background-color: #38bdf8;
-  color: #000;
+  background-color: #5872E0;
+  color: #ffffff;
 }
 
 .btn.primary:hover {
-  background-color: #0ea5e9;
+  background-color: #3F56C4;
 }
 
 .btn.ghost {
-  border: 1px solid #38bdf8;
-  color: #38bdf8;
+  border: 1px solid #5872E0;
+  color: #5872E0;
 }
 
 .btn.ghost:hover {
-  background-color: #38bdf8;
-  color: #000;
+  background-color: #5872E0;
+  color: #ffffff;
 }
 
 /* ===== 섹션 ===== */
@@ -94,7 +94,7 @@ body {
 }
 
 .section.alt {
-  background-color: #111827;
+  background-color: #1b2545;
 }
 
 .section-head {
@@ -124,6 +124,7 @@ body {
   background-color: #1e293b;
   padding: 20px;
   border-radius: 12px;
+  border: 1px solid rgba(88,114,224,0.15);
 }
 
 .card h3 {
@@ -137,8 +138,8 @@ body {
 /* ===== 푸터 ===== */
 .site-footer {
   padding: 30px 0;
-  background-color: #111827;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  background-color: #0f172a;
+  border-top: 1px solid rgba(88,114,224,0.3);
 }
 
 .footer-inner {
@@ -154,5 +155,5 @@ body {
 }
 
 .footer-links a:hover {
-  color: #ffffff;
+  color: #8FA2F5;
 }
